@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(53, 53, 86);
+}
+
+.container {
+    background-color: white;
+    width: min(90%, 450px);
+    position: absolute;
+    transition: translate(-50%, -50%);
+    top: 30%;
+    left: 35%;
+    padding: 3em 2em;
+    border-radius: 0.8em;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+}
+
+#hasil {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 600;
+    color: #262e45;
+    margin-top: 2em;
+}
+
+#hasil span {
+    font-size: 0.9em;
+}
+
+input {
+    padding: 1em 0.5em;
+    color: black;
+    border: 2px solid gainsboro;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+button {
+    border: none;
+    background-color: slateblue;
+    color: white;
+}
+
+input, button {
+    font-size: 1em;
+    outline: none;
+    border-radius: 0.5em;
+}
+
+#error {
+    text-align: center;
+    color: red;
+    text-decoration: underline;
+    margin-top: 0.5em;
+}
